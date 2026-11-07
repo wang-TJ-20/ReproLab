@@ -1,0 +1,30 @@
+# --- Upstream paper code (pulled at install time; submodules tracked via .gitmodules) ---
+third_party/*
+!third_party/.gitkeep
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.uv/
+*.egg-info/
+
+# --- Secrets / local env ---
+.env
+*.local
+
+# --- Large / generated artifacts ---
+checkpoints/
+models/
+data/raw/
+*.parquet
+wandb/
+swanlog/
+runs/
+*.log
+
+# --- OS / editor ---
+.DS_Store
+.idea/
+.vscode/
